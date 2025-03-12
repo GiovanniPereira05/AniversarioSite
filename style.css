@@ -1,0 +1,145 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0; 
+    background-color: black;
+    color: white;
+}
+
+button{
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 8px;
+}
+
+#boloContainer{
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+
+}
+
+#bolo{
+    font-size: 0.6rem;
+
+}
+
+.chama{
+    cursor: pointer;
+}
+
+.chama, .chamaCima{
+    color: red;
+}
+
+h1{
+    text-align: center;
+}
+
+#textoNiverContainer{
+    display: flex;
+    margin: auto;
+    width: 100vw;
+}
+
+.textoNiver{
+    font-size: 0.3rem;
+    display: none;
+    margin: auto;
+
+}
+
+.textoNiver1{
+    animation: trocaCor1 2s infinite linear;
+    width: 340px;
+}
+
+.textoNiver2{
+    animation: trocaCor2 2s infinite linear;
+}
+
+@keyframes trocaCor1 {
+    0%{
+        color: #f0288a;
+      }
+    25%{
+        color: #223b97;
+    }
+    50%{
+        color: #f0288a;
+    }
+    75%{
+        color: #223b97;
+    }
+    100%{
+        color: #f0288a;
+    }
+}
+
+@keyframes trocaCor2 {
+    0%{
+        color: #223b97;
+      }
+    25%{
+        color: #f0288a;
+    }
+    50%{
+        color: #223b97;
+    }
+    75%{
+        color:#f0288a
+    }
+    100%{
+        color: #223b97;
+    }
+
+}
+
+.chamaCima {
+    display: inline-block;  
+}
+
+.chamaCima.animar {
+    -webkit-transform: scale(-1, -1);
+    -moz-transform: scale(-1, -1);
+    -o-transform: scale(-1, -1);
+    transform: scale(-1, -1);
+}
+
+#presenteTampa {
+    display: inline-block; 
+    cursor: pointer;
+    transition: transform 0.3s ease;  
+}
+
+.presenteTampaAbrir {
+    transform: translateY(-30px);
+}
+
+#presente{
+    cursor: pointer;
+}
+
+.dentroPresenteEscondido{
+    display: none;
+    
+}
+
+#presenteContainer{
+   font-size: 0.6rem;
+}
+
+#lacinho{
+    color: rgb(255, 0, 0);
+}
+
+#estrelasContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.estrelas{
+    padding: 5px;    
+}
